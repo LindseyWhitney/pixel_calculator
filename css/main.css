@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	border: 1px solid red;
+	}
+
+/**********************************
+GENERAL
+***********************************/
+
+body {
+	font-family: 'Oswald', sans-serif;
+	}
+	
+#main-wrapper {
+	display: block;
+	height: 100%;
+	}
+	
+a {
+  text-decoration: none;
+	}
+
+/**********************************
+HEADING
+***********************************/
+
+header {
+	display: block;
+	height: 4.1%;
+	background-color: #00FFFF;	
+	}
+	
+#github {
+	width: 10px; 
+	}
+/*
+font-family: 'Kaushan Script', cursive;
