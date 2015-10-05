@@ -1,0 +1,15 @@
+header {
+  background-color: $primary-color;
+  margin: 0;
+  padding: 0;
+
+    h1 {
+      display: block;
+    }
+}
+
+#pixeltoprint {
+  width: 542px;
+  height: 110px;
+  background: url(images/PixelCalc_header_spriteTB_542x220.jpg) 0 0;
+}

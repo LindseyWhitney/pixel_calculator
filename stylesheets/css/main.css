@@ -1,5 +1,33 @@
-p {
-  color: pink; }
+body {
+  background-color: white;
+  font-family: 'Oswald', 'Helvetica', sans-serif;
+  color: #00ffff;
+  margin: 0;
+  padding: 0; }
+
+h2, h3 {
+  font-family: 'Kaushan Script', cursive;
+  color: #29abe2;
+  font-size: 2em;
+  margin: 0;
+  padding: 0; }
+
+header {
+  background-color: #00ffff;
+  margin: 0;
+  padding: 0; }
+  header h1 {
+    display: block; }
+
+#pixeltoprint {
+  width: 542px;
+  height: 110px;
+  background: url(images/PixelCalc_header_spriteTB_542x220.jpg) 0 0; }
+
+#github {
+  display: inline-block;
+  width: 2em;
+  border-color: red; }
 
 p {
   color: red; }

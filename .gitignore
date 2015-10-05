@@ -19,10 +19,12 @@ build/*
 # Exclude Text Files
 *.txt
 # Except read me
-!README.txt 
+!README.txt
 
 # Exclude log files
 *.log
 
 # Exclude Fonts
 _fonts/
+
+scss/0-helpers
