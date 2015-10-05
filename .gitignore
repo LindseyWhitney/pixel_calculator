@@ -27,4 +27,4 @@ build/*
 # Exclude Fonts
 _fonts/
 
-scss/0-helpers
+scss/0-helpers/
