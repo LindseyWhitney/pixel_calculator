@@ -1,24 +1,24 @@
 header {
-  @include outer-container(100%);
-  @include span-columns(12);
-  background-color: $primary-color;
+  @include outer-container;
+}
+
+nav {
+    background-color: $primary-color-cyan;
 }
 
 #main-wrapper {
-    @include outer-container(100%);
-    @include span-columns(12);
-
+    @include outer-container;
     background-color: green;
 }
 
 .input {
-  @include span-columns(8 of 12);
+  @include span-columns(8);
   @include shift(2 of 12);
   background-color: yellow;
 }
 
 .output {
-  @include span-columns(8 of 12);
+  @include span-columns(8);
   @include shift(2 of 12);
   background-color: orange;
 }
@@ -27,4 +27,4 @@ header {
   @include hide-text;
   @include size(542px 110px);
   background-image: url(images/PixelCalc_header_spriteTB_542x220.jpg) 0 0;
-}
+} 

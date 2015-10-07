@@ -1,23 +1,31 @@
 //VARIABLES
 
-$primary-color: #00ffff;
-$secondary-color: #29abe2;
+$primary-color-cyan: #00ffff;
+$secondary-color-periwinkle: #29abe2;
 
 
 //ELEMENT STYLES
 
 body {
-  background-color: white;
+  background-color: #eee;
   font-family: 'Oswald', 'Helvetica', sans-serif;
-  color: $primary-color;
-  margin: 0;
-  padding: 0;
+  color: $primary-color-cyan;
 }
 
 h2, h3 {
   font-family: 'Kaushan Script', cursive;
-  color: $secondary-color;
+  color: $secondary-color-periwinkle;
   font-size: 2em;
+}
+
+ul, li, {
   margin: 0;
-  padding: 0;
+  padding: 0 .25em;
+}
+
+li {
+  padding: 1em;
+  list-style: none;
+  font-size: .75em;
+  letter-spacing: 2px;
 }

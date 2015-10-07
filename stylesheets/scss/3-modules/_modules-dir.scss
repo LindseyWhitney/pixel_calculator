@@ -1,6 +1,13 @@
-#github {
-  display: inline-block;
+li a.switch {
+  @include span-columns(3, collapse);
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+li a#github {
+  @include span-columns(1, collapse);
   width: 2em;
-  border-color: red;
+
 
 }
