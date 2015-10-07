@@ -27,4 +27,6 @@ build/*
 # Exclude Fonts
 _fonts/
 
-stylesheets/scss/0-helpers/
+stylesheets/scss/0-helpers/base
+stylesheets/scss/0-helpers/bourbon
+stylesheets/scss/0-helpers/neat

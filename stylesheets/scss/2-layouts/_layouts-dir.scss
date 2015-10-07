@@ -1,15 +1,30 @@
 header {
+  @include outer-container(100%);
+  @include span-columns(12);
   background-color: $primary-color;
-  margin: 0;
-  padding: 0;
+}
 
-    h1 {
-      display: block;
-    }
+#main-wrapper {
+    @include outer-container(100%);
+    @include span-columns(12);
+
+    background-color: green;
+}
+
+.input {
+  @include span-columns(8 of 12);
+  @include shift(2 of 12);
+  background-color: yellow;
+}
+
+.output {
+  @include span-columns(8 of 12);
+  @include shift(2 of 12);
+  background-color: orange;
 }
 
 #pixeltoprint {
-  width: 542px;
-  height: 110px;
-  background: url(images/PixelCalc_header_spriteTB_542x220.jpg) 0 0;
+  @include hide-text;
+  @include size(542px 110px);
+  background-image: url(images/PixelCalc_header_spriteTB_542x220.jpg) 0 0;
 }
