@@ -389,17 +389,20 @@ body {
 h2, h3 {
   font-family: 'Kaushan Script', cursive;
   color: #29abe2;
-  font-size: 2em; }
+  font-size: 2em;
+  text-align: center; }
 
-ul, li {
-  margin: 0;
-  padding: 0 .25em; }
+ul {
+  margin: 0 auto;
+  padding: 0 .25em;
+  border: 1px solid blue; }
 
 li {
   padding: 1em;
   list-style: none;
   font-size: .75em;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  border: 1px solid green; }
 
 header {
   max-width: 68em;
@@ -411,7 +414,9 @@ header {
     display: table; }
 
 nav {
-  background-color: #00ffff; }
+  background-color: #00ffff;
+  height: 4em;
+  width: 100%; }
 
 #main-wrapper {
   max-width: 68em;
@@ -443,30 +448,48 @@ nav {
   .output:last-child {
     margin-right: 0; }
 
-#pixeltoprint {
-  overflow: hidden;
-  text-indent: 101%;
-  white-space: nowrap;
-  height: 110px;
-  width: 542px;
-  background-image: url(images/PixelCalc_header_spriteTB_542x220.jpg) 0 0; }
-
 li a.switch {
   float: left;
   display: block;
   width: 25.58941%;
   color: white;
+  float: left;
   text-transform: uppercase;
-  text-decoration: none; }
+  text-decoration: none;
+  border-color: red;
+  border-width: 1px;
+  border-style: solid; }
   li a.switch:last-child {
     width: 23.23176%; }
 
-li a#github {
+.right-align {
+  display: inline-block;
+  float: right;
+  width: 2em;
+  height: 2em;
+  float: right; }
+
+li a img#github {
   float: left;
   display: block;
-  width: 8.5298%;
-  width: 2em; }
-  li a#github:last-child {
-    width: 6.17215%; }
+  width: 25.58941%;
+  max-height: 2em;
+  border-color: red;
+  border-width: 1px;
+  border-style: solid; }
+  li a img#github:last-child {
+    width: 23.23176%; }
+
+.pixeltoprint-header {
+  background-image: url(../../../images/PixelCalc_header_spriteTB_542x220.jpg);
+  background-position: top left;
+  background-repeat: no-repeat; }
+
+h1 {
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+  height: 110px;
+  width: 542px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,13 +1,38 @@
 li a.switch {
   @include span-columns(3, collapse);
   color: white;
+  float: left;
   text-transform: uppercase;
   text-decoration: none;
+  border-color: red;
+  border-width: 1px;
+  border-style: solid;
 }
 
-li a#github {
-  @include span-columns(1, collapse);
+.right-align {
+  display: inline-block;
+  float: right;
   width: 2em;
+  height: 2em;
+  float: right;
+}
 
+li a img#github {
+  @include span-columns(3, collapse);
+  max-height: 2em;
+  border-color: red;
+  border-width: 1px;
+  border-style: solid;
+}
 
+.pixeltoprint-header {
+  background-image: url(../../../images/PixelCalc_header_spriteTB_542x220.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  @include hide-text;
+  height: 110px;
+  width: 542px;
 }

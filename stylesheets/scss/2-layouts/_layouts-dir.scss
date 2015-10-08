@@ -1,9 +1,12 @@
 header {
   @include outer-container;
+
 }
 
 nav {
     background-color: $primary-color-cyan;
+    height: 4em;
+    width: 100%;
 }
 
 #main-wrapper {
@@ -22,9 +25,3 @@ nav {
   @include shift(2 of 12);
   background-color: orange;
 }
-
-#pixeltoprint {
-  @include hide-text;
-  @include size(542px 110px);
-  background-image: url(images/PixelCalc_header_spriteTB_542x220.jpg) 0 0;
-} 
