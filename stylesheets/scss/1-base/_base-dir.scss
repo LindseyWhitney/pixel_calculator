@@ -1,9 +1,9 @@
 //VARIABLES
-
 $primary-color-cyan: #00ffff;
 $secondary-color-periwinkle: #29abe2;
 
-
+//MIXINS
+// mixin proof-border  border: 1px solid green;
 //ELEMENT STYLES
 
 body {
@@ -15,23 +15,19 @@ body {
 h2, h3 {
   font-family: 'Kaushan Script', cursive;
   color: $secondary-color-periwinkle;
-  font-size: 2em;
+  font-size: 2rem;
   text-align: center;
 }
 
 ul {
   margin: 0 auto;
-  padding: 0 .25em;
-  border: 1px solid blue;
-
-
+  padding: 0 .25rem;
+  @include span-columns(12);
 }
 
 li {
-  padding: 1em;
+  padding: .5rem;
   list-style: none;
-  font-size: .75em;
+  font-size: 1rem;
   letter-spacing: 2px;
-  border: 1px solid green;
-
 }

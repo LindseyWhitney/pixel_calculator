@@ -1,38 +1,31 @@
-li a.switch {
-  @include span-columns(3, collapse);
-  color: white;
-  float: left;
-  text-transform: uppercase;
-  text-decoration: none;
-  border-color: red;
-  border-width: 1px;
-  border-style: solid;
-}
-
-.right-align {
+.switch-priority {
   display: inline-block;
-  float: right;
-  width: 2em;
-  height: 2em;
-  float: right;
+  @include span-columns(3 of 12);
+  padding-top: .6rem;
+
+  a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
 }
 
-li a img#github {
-  @include span-columns(3, collapse);
-  max-height: 2em;
-  border-color: red;
-  border-width: 1px;
-  border-style: solid;
+.github-logo {
+  display: inline-block;
+  @include span-columns(3 of 12);
+  @include shift(6);
+
+
+  a img {
+    max-width: 1.5rem;
+    float: right;
+  }
 }
 
 .pixeltoprint-header {
-  background-image: url(../../../images/PixelCalc_header_spriteTB_542x220.jpg);
-  background-position: top left;
-  background-repeat: no-repeat;
-}
-
-h1 {
-  @include hide-text;
-  height: 110px;
-  width: 542px;
+    display: block;
+    background-color: pink;
+    @include hide-text;
+    background-image: url(/images/PixelCalc_header_spriteTB_542x220.jpg);
+    background-repeat: no-repeat;
 }
