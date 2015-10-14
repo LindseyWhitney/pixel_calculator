@@ -382,7 +382,7 @@ th {
   padding: 0; }
 
 body {
-  background-color: #eee;
+  background-color: #fff;
   font-family: 'Oswald', 'Helvetica', sans-serif;
   color: #00ffff; }
 
@@ -399,8 +399,7 @@ ul {
 li {
   list-style: none;
   font-size: 1rem;
-  letter-spacing: 2px;
-  width: 40%; }
+  letter-spacing: 2px; }
 
 header {
   max-width: 68em;
@@ -451,7 +450,8 @@ h2, h3 {
   display: inline-block;
   position: absolute;
   left: .6rem;
-  top: .5rem; }
+  top: .5rem;
+  width: 60%; }
   .switch-priority a {
     color: white;
     text-transform: uppercase;
@@ -462,18 +462,23 @@ h2, h3 {
   display: inline-block;
   position: absolute;
   right: .55rem;
-  top: .5rem; }
+  top: .5rem;
+  width: 10%; }
   .github-logo a img {
     max-width: 1.5rem;
     float: right; }
 
 .pixeltoprint-header {
-  display: block;
-  background-color: pink;
   overflow: hidden;
   text-indent: 101%;
   white-space: nowrap;
-  background-image: url(/images/PixelCalc_header_spriteTB_542x220.jpg);
-  background-repeat: no-repeat; }
+  display: block;
+  background-color: pink;
+  height: 110px;
+  width: 542px;
+  margin: 5rem auto 0 auto;
+  background-image: url(../../images/PixelCalc_header_spriteTB_542x220.jpg);
+  background-repeat: no-repeat;
+  background-position: left top; }
 
 /*# sourceMappingURL=main.css.map */

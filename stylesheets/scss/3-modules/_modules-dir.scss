@@ -3,6 +3,7 @@
   position: absolute;
   left: .6rem;
   top: .5rem;
+  width: 60%;
 
   a {
     color: white;
@@ -17,6 +18,8 @@
   position: absolute;
   right: .55rem;
   top: .5rem;
+  width: 10%;
+
   a img {
     max-width: 1.5rem;
     float: right;
@@ -25,9 +28,14 @@
 }
 
 .pixeltoprint-header {
+    @include hide-text;
     display: block;
     background-color: pink;
-    @include hide-text;
-    background-image: url(/images/PixelCalc_header_spriteTB_542x220.jpg);
+    height: 110px;
+    width: 542px;
+
+    margin: 5rem auto 0 auto;
+    background-image: url(../../images/PixelCalc_header_spriteTB_542x220.jpg);
     background-repeat: no-repeat;
+    background-position: left top;
 }

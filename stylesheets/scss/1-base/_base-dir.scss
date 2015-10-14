@@ -12,7 +12,7 @@ $secondary-color-periwinkle: #29abe2;
 
 //ELEMENT STYLES
 body {
-  background-color: #eee;
+  background-color: #fff;
   font-family: 'Oswald', 'Helvetica', sans-serif;
   color: $primary-color-cyan;
 }
@@ -33,7 +33,6 @@ li {
   list-style: none;
   font-size: 1rem;
   letter-spacing: 2px;
-  width: 40%;
 }
 
 header {
