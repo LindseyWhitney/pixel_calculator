@@ -386,27 +386,21 @@ body {
   font-family: 'Oswald', 'Helvetica', sans-serif;
   color: #00ffff; }
 
-h2, h3 {
-  font-family: 'Kaushan Script', cursive;
-  color: #29abe2;
-  font-size: 2rem;
-  text-align: center; }
+nav {
+  background-color: #00ffff;
+  height: 2.5em;
+  width: 100%; }
 
 ul {
-  margin: 0 auto;
-  padding: 0 .25rem;
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%; }
-  ul:last-child {
-    margin-right: 0; }
+  margin: 0;
+  height: 100%;
+  position: relative; }
 
 li {
-  padding: .5rem;
   list-style: none;
   font-size: 1rem;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  width: 40%; }
 
 header {
   max-width: 68em;
@@ -417,10 +411,11 @@ header {
     content: "";
     display: table; }
 
-nav {
-  background-color: #00ffff;
-  height: 2.5em;
-  width: 100%; }
+h2, h3 {
+  font-family: 'Kaushan Script', cursive;
+  color: #29abe2;
+  font-size: 2rem;
+  text-align: center; }
 
 #main-wrapper {
   max-width: 68em;
@@ -454,27 +449,20 @@ nav {
 
 .switch-priority {
   display: inline-block;
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 23.23176%;
-  padding-top: .6rem; }
-  .switch-priority:last-child {
-    margin-right: 0; }
+  position: absolute;
+  left: .6rem;
+  top: .5rem; }
   .switch-priority a {
     color: white;
     text-transform: uppercase;
-    text-decoration: none; }
+    text-decoration: none;
+    font-size: 1.1rem; }
 
 .github-logo {
   display: inline-block;
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 23.23176%;
-  margin-left: 51.17883%; }
-  .github-logo:last-child {
-    margin-right: 0; }
+  position: absolute;
+  right: .55rem;
+  top: .5rem; }
   .github-logo a img {
     max-width: 1.5rem;
     float: right; }

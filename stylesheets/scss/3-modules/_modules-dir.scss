@@ -1,23 +1,26 @@
 .switch-priority {
   display: inline-block;
-  @include span-columns(3 of 12);
-  padding-top: .6rem;
+  position: absolute;
+  left: .6rem;
+  top: .5rem;
 
   a {
     color: white;
     text-transform: uppercase;
     text-decoration: none;
+    font-size: 1.1rem;
   }
 }
 
 .github-logo {
   display: inline-block;
-  @include span-columns(3 of 12);
-  @include shift(6);
-
+  position: absolute;
+  right: .55rem;
+  top: .5rem;
   a img {
     max-width: 1.5rem;
     float: right;
+
   }
 }
 

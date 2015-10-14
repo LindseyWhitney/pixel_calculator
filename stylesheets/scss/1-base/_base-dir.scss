@@ -3,13 +3,41 @@ $primary-color-cyan: #00ffff;
 $secondary-color-periwinkle: #29abe2;
 
 //MIXINS
-// mixin proof-border  border: 1px solid green;
-//ELEMENT STYLES
+@mixin visualizer($bcolor, $bstyle: solid, $background: transparent) {
+  border-width: 1px;
+  border-style: $bstyle;
+  border-color: $bcolor;
+  background-color: $background;
+}
 
+//ELEMENT STYLES
 body {
   background-color: #eee;
   font-family: 'Oswald', 'Helvetica', sans-serif;
   color: $primary-color-cyan;
+}
+
+nav {
+    background-color: $primary-color-cyan;
+    height: 2.5em;
+    width: 100%;
+}
+
+ul {
+  margin: 0;
+  height: 100%;
+  position: relative;
+}
+
+li {
+  list-style: none;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  width: 40%;
+}
+
+header {
+  @include outer-container;
 }
 
 h2, h3 {
@@ -17,17 +45,4 @@ h2, h3 {
   color: $secondary-color-periwinkle;
   font-size: 2rem;
   text-align: center;
-}
-
-ul {
-  margin: 0 auto;
-  padding: 0 .25rem;
-  @include span-columns(12);
-}
-
-li {
-  padding: .5rem;
-  list-style: none;
-  font-size: 1rem;
-  letter-spacing: 2px;
 }

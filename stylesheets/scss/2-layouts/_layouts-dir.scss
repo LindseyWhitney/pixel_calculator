@@ -1,13 +1,3 @@
-header {
-  @include outer-container;
-}
-
-nav {
-    background-color: $primary-color-cyan;
-    height: 2.5em;
-    width: 100%;
-}
-
 #main-wrapper {
     @include outer-container;
     background-color: green;
