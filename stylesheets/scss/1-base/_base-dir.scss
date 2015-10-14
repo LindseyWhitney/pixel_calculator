@@ -1,6 +1,6 @@
 //VARIABLES
 $primary-color-cyan: #00ffff;
-$secondary-color-periwinkle: #29abe2;
+$secondary-color-periwinkle: rgba(41, 171, 226, .5);
 
 //MIXINS
 @mixin visualizer($bcolor, $bstyle: solid, $background: transparent) {
@@ -44,4 +44,8 @@ h2, h3 {
   color: $secondary-color-periwinkle;
   font-size: 2rem;
   text-align: center;
+}
+
+h2 {
+  color: $primary-color-cyan;
 }

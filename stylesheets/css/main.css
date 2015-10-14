@@ -21,7 +21,7 @@ body:before {
   position: fixed;
   right: 0;
   width: 100%;
-  z-index: 9999; }
+  z-index: -1; }
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
@@ -412,9 +412,12 @@ header {
 
 h2, h3 {
   font-family: 'Kaushan Script', cursive;
-  color: #29abe2;
+  color: rgba(41, 171, 226, 0.5);
   font-size: 2rem;
   text-align: center; }
+
+h2 {
+  color: #00ffff; }
 
 #main-wrapper {
   max-width: 68em;
@@ -480,5 +483,12 @@ h2, h3 {
   background-image: url(../../images/PixelCalc_header_spriteTB_542x220.jpg);
   background-repeat: no-repeat;
   background-position: left top; }
+
+.add-rules {
+  border-color: rgba(41, 171, 226, 0.5) transparent;
+  border-width: 2px;
+  border-style: solid;
+  width: 542px;
+  margin: 1.5rem auto 5rem; }
 
 /*# sourceMappingURL=main.css.map */
