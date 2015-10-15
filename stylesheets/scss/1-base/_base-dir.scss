@@ -2,6 +2,9 @@
 $primary-color-cyan: #00ffff;
 $secondary-color-periwinkle: rgba(41, 171, 226, .5);
 
+$primary-fontfamily: 'Oswald', 'Helvetica', sans-serif;
+$secondary-fontfamily: 'Kaushan Script', cursive;
+
 //MIXINS
 @mixin visualizer($bcolor, $bstyle: solid, $background: transparent) {
   border-width: 1px;
@@ -13,7 +16,7 @@ $secondary-color-periwinkle: rgba(41, 171, 226, .5);
 //ELEMENT STYLES
 body {
   background-color: #fff;
-  font-family: 'Oswald', 'Helvetica', sans-serif;
+  font-family: $primary-fontfamily;
   color: $primary-color-cyan;
 }
 
@@ -40,7 +43,7 @@ header {
 }
 
 h2, h3 {
-  font-family: 'Kaushan Script', cursive;
+  font-family: $secondary-fontfamily;
   color: $secondary-color-periwinkle;
   font-size: 2rem;
   text-align: center;

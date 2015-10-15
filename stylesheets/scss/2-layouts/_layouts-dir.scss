@@ -1,16 +1,28 @@
 #main-wrapper {
     @include outer-container;
-    background-color: green;
 }
 
 .input {
-  @include span-columns(8);
-  @include shift(2 of 12);
-  background-color: yellow;
+  @include span-columns(10);
+  @include shift(1 of 12);
 }
 
 .output {
   @include span-columns(8);
   @include shift(2 of 12);
   background-color: orange;
+}
+
+form {
+  margin: 0 auto;
+  height: em(140);
+  padding: 0;
+  width: 100%;
+}
+
+fieldset {
+  @include span-columns (8 of 10);
+  position: relative;
+  padding: 0 0 0 7%;
+  border: none;
 }

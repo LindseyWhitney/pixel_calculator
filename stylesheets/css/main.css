@@ -383,7 +383,7 @@ th {
 
 body {
   background-color: #fff;
-  font-family: 'Oswald', 'Helvetica', sans-serif;
+  font-family: "Oswald", "Helvetica", sans-serif;
   color: #00ffff; }
 
 nav {
@@ -411,7 +411,7 @@ header {
     display: table; }
 
 h2, h3 {
-  font-family: 'Kaushan Script', cursive;
+  font-family: "Kaushan Script", cursive;
   color: rgba(41, 171, 226, 0.5);
   font-size: 2rem;
   text-align: center; }
@@ -422,8 +422,7 @@ h2 {
 #main-wrapper {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto;
-  background-color: green; }
+  margin-right: auto; }
   #main-wrapper::after {
     clear: both;
     content: "";
@@ -433,9 +432,8 @@ h2 {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 65.88078%;
-  margin-left: 17.05961%;
-  background-color: yellow; }
+  width: 82.94039%;
+  margin-left: 8.5298%; }
   .input:last-child {
     margin-right: 0; }
 
@@ -447,6 +445,23 @@ h2 {
   margin-left: 17.05961%;
   background-color: orange; }
   .output:last-child {
+    margin-right: 0; }
+
+form {
+  margin: 0 auto;
+  height: 8.75em;
+  padding: 0;
+  width: 100%; }
+
+fieldset {
+  float: left;
+  display: block;
+  margin-right: 2.84259%;
+  width: 79.43148%;
+  position: relative;
+  padding: 0 0 0 7%;
+  border: none; }
+  fieldset:last-child {
     margin-right: 0; }
 
 .switch-priority {
@@ -503,5 +518,50 @@ h2 {
 
 .button:hover {
   background-position: top right; }
+
+.x {
+  color: rgba(41, 171, 226, 0.5);
+  float: left;
+  display: block;
+  margin-right: 3.57866%;
+  width: 2.895%;
+  text-align: center;
+  font-size: 1.875em;
+  display: inline-block;
+  height: 3.125em;
+  margin: 0 3% 0 0;
+  font-family: "Oswald", "Helvetica", sans-serif; }
+  .x:last-child {
+    margin-right: 0; }
+
+input[type="text"] {
+  float: left;
+  display: block;
+  margin-right: 3.57866%;
+  width: 41.737%;
+  height: 5.9375em;
+  margin: 0 3% 0 0;
+  padding: 0;
+  border-color: rgba(41, 171, 226, 0.5);
+  border-width: 2px;
+  border-style: solid; }
+  input[type="text"]:last-child {
+    margin-right: 0; }
+
+label {
+  float: left;
+  display: block;
+  margin-right: 3.57866%;
+  width: 38.50017%;
+  font-family: "Kaushan Script", cursive;
+  color: rgba(41, 171, 226, 0.5);
+  text-align: center;
+  position: absolute;
+  top: 100px; }
+  label:last-child {
+    margin-right: 0; }
+
+label[for="heightinpixels"] {
+  margin-left: 45.96303%; }
 
 /*# sourceMappingURL=main.css.map */
