@@ -491,4 +491,17 @@ h2 {
   width: 542px;
   margin: 1.5rem auto 5rem; }
 
+.button {
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+  width: 100px;
+  height: 100px;
+  background-image: url(../../images/PixelCalc_button_spriteLR_200x100.jpg);
+  background-repeat: no-repeat;
+  background-position: top left; }
+
+.button:hover {
+  background-position: top right; }
+
 /*# sourceMappingURL=main.css.map */
