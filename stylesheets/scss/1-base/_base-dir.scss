@@ -45,8 +45,9 @@ header {
 h2, h3 {
   font-family: $secondary-fontfamily;
   color: $secondary-color-periwinkle;
-  font-size: 2rem;
+  font-size: 2em;
   text-align: center;
+  @include visualizer (pink);
 }
 
 h2 {

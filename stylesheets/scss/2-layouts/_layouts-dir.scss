@@ -10,7 +10,6 @@
 .output {
   @include span-columns(8);
   @include shift(2 of 12);
-  background-color: orange;
 }
 
 form {
