@@ -45,11 +45,14 @@ header {
 h2, h3 {
   font-family: $secondary-fontfamily;
   color: $secondary-color-periwinkle;
-  font-size: 2em;
+  font-size: 2.25em;
   text-align: center;
-  @include visualizer (pink);
 }
 
-h2 {
-  color: $primary-color-cyan;
+
+h3 {
+    height: 2em;
+    margin: 0;
+    padding: 0;
+    font-size: 1.8em;
 }

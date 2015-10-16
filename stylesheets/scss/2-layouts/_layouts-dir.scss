@@ -5,11 +5,12 @@
 .input {
   @include span-columns(10);
   @include shift(1 of 12);
+  margin-bottom: 4em;
 }
 
 .output {
-  @include span-columns(8);
-  @include shift(2 of 12);
+  @include span-columns(10);
+  @include shift(1 of 12);
 }
 
 form {
