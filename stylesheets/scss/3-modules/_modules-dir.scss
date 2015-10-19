@@ -32,14 +32,18 @@
 .pixeltoprint-header {
     @include hide-text;
     display: block;
-    background-color: pink;
     height: 110px;
     width: 542px;
-
     margin: 5rem auto 0 auto;
     background-image: url(../../images/PixelCalc_header_spriteTB_542x220.jpg);
     background-repeat: no-repeat;
     background-position: left top;
+
+    @media screen and (min-width: 320px) and (max-width: 725px) {
+      height: 95px;
+      width: 465px;
+      background-image: url(../../images/PixelCalc_header_spriteTB_465x190.jpg);
+    }
 }
 
 .add-rules {
@@ -48,6 +52,10 @@
   border-style: solid;
   width: 542px;
   margin: 1.5rem auto 5rem;
+
+  @media screen and (min-width: 320px) and (max-width: 725px) {
+    width: 465px;
+  }
 }
 
 
@@ -59,10 +67,21 @@
   background-image: url(../../images/PixelCalc_button_spriteLR_200x100.jpg);
   background-repeat: no-repeat;
   background-position: top left;
+
+  @media screen and (min-width: 320px) and (max-width: 725px) {
+    display: inline-block;
+    background-image: url(../../images/PixelCalc_button_245x65.png);
+    background-repeat: no-repeat;
+    width: 43%;
+    height: em(68);
+    background-color: $primary-color-cyan;
+    position: relative;
+    left: 7.5%;
+  }
 }
 
 .button:hover {
-  background-position: top right;
+  background-color: $secondary-color-periwinkle;
 }
 
 input[type="text"] {
@@ -74,6 +93,12 @@ input[type="text"] {
   border-color: $secondary-color-periwinkle;
   border-width: 2px;
   border-style: solid;
+
+  @media screen and (min-width: 320px) and (max-width: 725px) {
+    width: 60%;
+    height: em(65);
+    margin: 0 3% 3% 0;
+  }
 }
 
 label {
@@ -86,10 +111,20 @@ label {
   position: absolute;
   top: 5.75em;
   left: 8.5%;
+
+  @media screen and (min-width: 320px) and (max-width: 725px) {
+    top: em(15);
+    left: 60.5%;
+  }
 }
 
 label[for="heightinpixels"] {
   left: 57%;
+
+  @media screen and (min-width: 320px) and (max-width: 725px) {
+    top: em(75);
+    left: 60.5%;
+  }
 }
 
 
@@ -123,6 +158,10 @@ label[for="heightinpixels"] {
   height: em(40);
   margin: 0 3% 0 0;
   font-family: $primary-fontfamily;
+
+  @media screen and (min-width: 320px) and (max-width: 725px) {
+    display: none;
+  }
 }
 
 #x {

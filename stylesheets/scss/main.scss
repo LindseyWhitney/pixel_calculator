@@ -4,6 +4,7 @@ $visual-grid-index: back;
 
 
 @import "0-helpers/_helpers-dir.scss";
+@import "0-helpers/_normalize.scss";
 @import "1-base/_base-dir.scss";
 @import "2-layouts/_layouts-dir.scss";
 @import "3-modules/_modules-dir.scss";

@@ -6,11 +6,17 @@
   @include span-columns(10);
   @include shift(1 of 12);
   margin-bottom: 4em;
+  margin-top: -1.3em;
 }
 
 .output {
   @include span-columns(10);
   @include shift(1 of 12);
+
+  @media screen and (min-width: 320px) and (max-width: 725px) {
+    margin-top: 3.2em;
+
+  }
 }
 
 form {
@@ -18,6 +24,7 @@ form {
   height: em(140);
   padding: 0;
   width: 100%;
+  position: relative;
 }
 
 fieldset {

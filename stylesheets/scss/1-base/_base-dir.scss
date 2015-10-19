@@ -6,11 +6,10 @@ $primary-fontfamily: 'Oswald', 'Helvetica', sans-serif;
 $secondary-fontfamily: 'Kaushan Script', cursive;
 
 //MIXINS
-@mixin visualizer($bcolor, $bstyle: solid, $background: transparent) {
+@mixin visualizer($bcolor, $bstyle: solid) {
   border-width: 1px;
   border-style: $bstyle;
   border-color: $bcolor;
-  background-color: $background;
 }
 
 //ELEMENT STYLES
@@ -47,6 +46,10 @@ h2, h3 {
   color: $secondary-color-periwinkle;
   font-size: 2.25em;
   text-align: center;
+
+  @media screen and (min-width: 320px) and (max-width: 725px) {
+    font-size: 1.85em;
+  }
 }
 
 
