@@ -771,7 +771,7 @@ header {
 h2, h3 {
   font-family: "Kaushan Script", cursive;
   color: rgba(41, 171, 226, 0.5);
-  font-size: 2.25em;
+  font-size: 2em;
   text-align: center; }
   @media screen and (min-width: 320px) and (max-width: 725px) {
     h2, h3 {
@@ -873,6 +873,23 @@ fieldset {
   background-position: left top; }
   @media screen and (min-width: 320px) and (max-width: 725px) {
     .pixeltoprint-header {
+      height: 95px;
+      width: 465px;
+      background-image: url(../../images/PixelCalc_header_spriteTB_465x190.jpg); } }
+
+.printtopixel-header {
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+  display: block;
+  height: 110px;
+  width: 542px;
+  margin: 5rem auto 0 auto;
+  background-image: url(../../images/PixelCalc_header_spriteTB_542x220.jpg);
+  background-repeat: no-repeat;
+  background-position: left bottom; }
+  @media screen and (min-width: 320px) and (max-width: 725px) {
+    .printtopixel-header {
       height: 95px;
       width: 465px;
       background-image: url(../../images/PixelCalc_header_spriteTB_465x190.jpg); } }

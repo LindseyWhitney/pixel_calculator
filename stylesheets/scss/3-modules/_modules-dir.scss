@@ -46,6 +46,23 @@
     }
 }
 
+.printtopixel-header {
+  @include hide-text;
+  display: block;
+  height: 110px;
+  width: 542px;
+  margin: 5rem auto 0 auto;
+  background-image: url(../../images/PixelCalc_header_spriteTB_542x220.jpg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+
+  @media screen and (min-width: 320px) and (max-width: 725px) {
+    height: 95px;
+    width: 465px;
+    background-image: url(../../images/PixelCalc_header_spriteTB_465x190.jpg);
+  }
+}
+
 .add-rules {
   border-color: $primary-color-cyan transparent;
   border-width: 2px;
