@@ -67,21 +67,22 @@
   background-image: url(../../images/PixelCalc_button_spriteLR_200x100.jpg);
   background-repeat: no-repeat;
   background-position: top left;
+  position: relative;
+  top: 4px;
 
   @media screen and (min-width: 320px) and (max-width: 725px) {
     display: inline-block;
     background-image: url(../../images/PixelCalc_button_245x65.png);
     background-repeat: no-repeat;
-    width: 43%;
-    height: em(68);
+    width: 245px;
+    height: em(67);
     background-color: $primary-color-cyan;
-    position: relative;
-    left: 7.5%;
   }
 }
 
 .button:hover {
   background-color: $secondary-color-periwinkle;
+  background-position: top right;
 }
 
 input[type="text"] {
@@ -95,8 +96,8 @@ input[type="text"] {
   border-style: solid;
 
   @media screen and (min-width: 320px) and (max-width: 725px) {
-    width: 60%;
-    height: em(65);
+    width: 245px;
+    height: em(67);
     margin: 0 3% 3% 0;
   }
 }
@@ -110,20 +111,22 @@ label {
   text-align: center;
   position: absolute;
   top: 5.75em;
-  left: 8.5%;
+  left: 7.5%;
 
   @media screen and (min-width: 320px) and (max-width: 725px) {
+    text-align: left;
     top: em(15);
-    left: 60.5%;
+    left: 260px;
   }
 }
 
 label[for="heightinpixels"] {
-  left: 57%;
+  left: 56%;
 
   @media screen and (min-width: 320px) and (max-width: 725px) {
     top: em(75);
-    left: 60.5%;
+    left: 260px;
+
   }
 }
 
