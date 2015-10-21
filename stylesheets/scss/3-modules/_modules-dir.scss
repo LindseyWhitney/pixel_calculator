@@ -154,7 +154,7 @@ label[for="heightinpixels"] {
 .output_figure, .height {
   display: inline-block;
   font-family: $primary-fontfamily;
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   color: $primary-color-cyan;
   margin: 0 2% 0 0;
 }
@@ -184,10 +184,12 @@ label[for="heightinpixels"] {
   }
 }
 
-#x {
+#best,
+#average,
+#min {
   color: $secondary-color-periwinkle;
   text-align: center;
-  font-size: rem(24);
+  font-size: rem(18);
   display: inline-block;
   height: em(40);
   margin: 0 2% 0 0;
