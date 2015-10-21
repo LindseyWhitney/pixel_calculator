@@ -8,39 +8,36 @@
         <link rel="stylesheet" href="stylesheets/css/main.css">
     	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
-        <divclass="animsition">
-          <nav>
-              <ul>
-                  <li class="switch-priority"><a href="print.html" class="switch animsition-link">Switch to Print Priority</a></li>
-                  <li class="github-logo"><a href="https://github.com/LindseyWhitney/pixel_calculator"><img src="images/GitHub_Logo-09.svg" alt="GitHub logo"/></a></li>
-              </ul>
-          </nav>
-          <header>
-              <h1 class="pixeltoprint-header">Pixel to Print</h1>
-              <h2 class="add-rules">Print Size Based on File Dimensions</h2>
-          </header>
-      	  <div id="main-wrapper">
-              <section class="input">
-                      <form>
-                          <fieldset>
-                              <input type="text" id="widthinpixels" name="width_pixels">
-                              <label for="widthinpixels">Width in Pixels</label>
-                              <div class="x"> <p>X</p> </div>
-                              <input type="text" id="heightinpixels" name="height_pixels">
-                              <label for="heightinpixels">Height in Pixels</label>
-                          </fieldset>
-                          <button type="button" class="button"/>
-                      </form>
-              </section>
-              <section class="output">
-                      <h3><span class="output_figure">width</span><span id="x">X</span><span class="height">height</span> Inches at 300 dpi</h3>
-                      <h3><span class="output_figure">width</span><span id="x">X</span><span class="height">height</span> Inches at 240 dpi</h3>
-                      <h3><span class="output_figure">width</span><span id="x">X</span><span class="height">height</span> Inches at 150 dpi</h3>
-              </section>
-          </div>  <!-- end main-wrapper -->
-        </div>  <!-- end animsition -->
-        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <body class="animsition">
+        <nav>
+            <ul>
+                <li class="switch-priority"><a href="print.html" class="switch animsition-link">Switch to Print Priority</a></li>
+                <li class="github-logo"><a href="https://github.com/LindseyWhitney/pixel_calculator"><img src="images/GitHub_Logo-09.svg" alt="GitHub logo"/></a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1 class="pixeltoprint-header">Pixel to Print</h1>
+            <h2 class="add-rules">Print Size Based on File Dimensions</h2>
+        </header>
+    	  <div id="main-wrapper">
+            <section class="input">
+                    <form>
+                        <fieldset>
+                            <input type="text" id="widthinpixels" name="width_pixels">
+                            <label for="widthinpixels">Width in Pixels</label>
+                            <div class="x"> <p>X</p> </div>
+                            <input type="text" id="heightinpixels" name="height_pixels">
+                            <label for="heightinpixels">Height in Pixels</label>
+                        </fieldset>
+                        <input type="image" class="button"/>
+                    </form>
+            </section>
+            <section class="output">
+                    <h3><span class="output_figure">width</span><span id="x">X</span><span class="height">height</span> Inches at 300 dpi</h3>
+                    <h3><span class="output_figure">width</span><span id="x">X</span><span class="height">height</span> Inches at 240 dpi</h3>
+                    <h3><span class="output_figure">width</span><span id="x">X</span><span class="height">height</span> Inches at 150 dpi</h3>
+            </section>
+        </div>  <!-- end main-wrapper -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/animsition.min.js"></script>
         <script src="js/main.js"></script>

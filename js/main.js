@@ -11,9 +11,6 @@ var pixelsAt300;
 var pixelsAt240;
 var pixelsAt150;
 
-
-
-
 function hideCalc () {
   $(".output").hide();
 }
@@ -22,7 +19,7 @@ function revealCalc () {
   $(".output").show("slow");
 }
 
-$(document).ready(hideCalc);
+//$(document).ready(hideCalc);
 
 $(".animsition").animsition();
 
@@ -36,9 +33,6 @@ $( ".button" ).click( function(){
   console.log($pixelHeight);
   console.log(printWidth300);
   console.log(printHeight300);
-
-  
-
 });
 
 $( "form" ).submit(function( event ) {
