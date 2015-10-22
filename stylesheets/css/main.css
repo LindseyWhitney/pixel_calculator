@@ -895,6 +895,7 @@ fieldset {
   background-image: url(../../images/PixelCalc_button_spriteLR_200x100.jpg);
   background-repeat: no-repeat;
   background-position: top left;
+  display: block;
   position: relative;
   top: 4px; }
   @media screen and (min-width: 320px) and (max-width: 725px) {
@@ -915,15 +916,25 @@ input[type="text"] {
   display: inline-block;
   height: 5.9375em;
   margin: 0 3% 0 0;
-  padding: 0;
+  padding: 0 20px;
   border-color: rgba(41, 171, 226, 0.5);
   border-width: 2px;
-  border-style: solid; }
+  border-style: solid;
+  box-sizing: border-box; }
   @media screen and (min-width: 320px) and (max-width: 725px) {
     input[type="text"] {
       width: 245px;
       height: 4.1875em;
       margin: 0 3% 3% 0; } }
+
+input[type="text"]:focus {
+  outline: 0;
+  border-color: rgba(41, 171, 226, 0.5);
+  border-width: 3.5px;
+  border-style: solid; }
+
+*:focus {
+  outline: 0; }
 
 label {
   width: 40%;
