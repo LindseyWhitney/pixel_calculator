@@ -27,12 +27,12 @@ $( ".button" ).click( function(){
   var $pixelWidth = $("#widthinpixels").val();
   var $pixelHeight = $("#heightinpixels").val();
 
-  printWidth300 = ($pixelWidth / 300).toFixed(2);
-  printHeight300 = ($pixelHeight / 300).toFixed(2);
-  printWidth240 = ($pixelWidth / 240).toFixed(2);
-  printHeight240 = ($pixelHeight / 240).toFixed(2);
-  printWidth150 = ($pixelWidth / 150).toFixed(2);
-  printHeight150 = ($pixelHeight / 150).toFixed(2);
+  printWidth300 = ($pixelWidth * 300).toFixed(2);
+  printHeight300 = ($pixelHeight * 300).toFixed(2);
+  printWidth240 = ($pixelWidth * 240).toFixed(2);
+  printHeight240 = ($pixelHeight * 240).toFixed(2);
+  printWidth150 = ($pixelWidth * 150).toFixed(2);
+  printHeight150 = ($pixelHeight * 150).toFixed(2);
 
   $( "#best" ).prev().html(printWidth300);
   $( "#best" ).next().html(printHeight300);

@@ -19,27 +19,27 @@
             <h1 class="printtopixel-header">Pixel to Print</h1>
             <h2 class="add-rules">Pixels Needed Based on Print Dimensions</h2>
         </header>
-    	  <div id="main-wrapper">
+        <div id="main-wrapper">
             <section class="input">
                     <form>
                         <fieldset>
                             <input type="text" id="widthinpixels" name="width_pixels">
-                            <label for="widthinpixels">Width in Pixels</label>
+                            <label for="widthinpixels">Width in Inches</label>
                             <div class="x"> <p>X</p> </div>
                             <input type="text" id="heightinpixels" name="height_pixels">
-                            <label for="heightinpixels">Height in Pixels</label>
+                            <label for="heightinpixels">Height in Inches</label>
                         </fieldset>
                         <input type="image" class="button"/>
                     </form>
             </section>
             <section class="output">
-                    <h3><span class="output_figure">width</span><span id="x">X</span><span class="height">height</span> Inches at 300 dpi</h3>
-                    <h3><span class="output_figure">width</span><span id="x">X</span><span class="height">height</span> Inches at 240 dpi</h3>
-                    <h3><span class="output_figure">width</span><span id="x">X</span><span class="height">height</span> Inches at 150 dpi</h3>
+                    <h3><span class="output_figure">width</span><span id="best">X</span><span class="height">height</span> Pixels need to print at 300 dpi</h3>
+                    <h3><span class="output_figure">width</span><span id="average">X</span><span class="height">height</span> Pixels need to print at 240 dpi</h3>
+                    <h3><span class="output_figure">width</span><span id="min">X</span><span class="height">height</span> Pixels need to print at 150 dpi</h3>
             </section>
         </div>  <!-- end main-wrapper -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="js/animsition.min.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="js/animsition.min.js"></script>
+      <script src="js/print.js"></script>
+  </body>
 </html>
