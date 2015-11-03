@@ -33,32 +33,49 @@ $(".animsition").animsition();
 
 $( ".button" ).click( function(){
 
-  var $pixelWidth = $("#widthinpixels").val();
-  var $pixelHeight = $("#heightinpixels").val();
+  var $pixelWidth = parseInt($("#widthinpixels").val());
+  var $pixelHeight = parseInt($("#heightinpixels").val());
 
-  printWidth300 = ($pixelWidth * 300).toFixed(2);
-  printHeight300 = ($pixelHeight * 300).toFixed(2);
-  printWidth240 = ($pixelWidth * 240).toFixed(2);
-  printHeight240 = ($pixelHeight * 240).toFixed(2);
-  printWidth150 = ($pixelWidth * 150).toFixed(2);
-  printHeight150 = ($pixelHeight * 150).toFixed(2);
+  var regEx = /-?^\d+.?\d+$/;
 
-  $( "#best" ).prev().html(printWidth300);
-  $( "#best" ).next().html(printHeight300);
 
-  $( "#average" ).prev().html(printWidth240);
-  $( "#average" ).next().html(printHeight240);
+function numberEvaluation () {
+  var widthEval = $pixelWidth.valueOf();
+  var NotaNumberWidth = isNaN($pixelWidth);
+  var NotaNumberHeight = isNaN($pixelHeight);
 
-  $( "#min" ).prev().html(printWidth150);
-  $( "#min" ).next().html(printHeight150);
+  if ((NotaNumberWidth || NotaNumberHeight) === true) {
+    console.log("This is not a number");
+    $('.output').html('<h3 class="alert">Please enter positive numeric values only.</h3>');
 
-  revealCalc();
+  } else {
+
+    printWidth300 = ($pixelWidth * 300).toFixed(2);
+    printHeight300 = ($pixelHeight * 300).toFixed(2);
+    printWidth240 = ($pixelWidth * 240).toFixed(2);
+    printHeight240 = ($pixelHeight * 240).toFixed(2);
+    printWidth150 = ($pixelWidth * 150).toFixed(2);
+    printHeight150 = ($pixelHeight * 150).toFixed(2);
+
+    $( "#best" ).prev().html(printWidth300);
+    $( "#best" ).next().html(printHeight300);
+
+    $( "#average" ).prev().html(printWidth240);
+    $( "#average" ).next().html(printHeight240);
+
+    $( "#min" ).prev().html(printWidth150);
+    $( "#min" ).next().html(printHeight150);
+
+  } //end else
+
+      revealCalc();
+
+} //end numberEvaluation
+
+numberEvaluation();
+
 });
 
 $( "form" ).submit(function( event ) {
   event.preventDefault();
 });
-
-//$( "input" ).click(function(){
-//  hideCalc();
-//});
