@@ -11,6 +11,14 @@ var pixelsAt300;
 var pixelsAt240;
 var pixelsAt150;
 
+function hideCalc () {
+  $(".output").hide();
+}
+
+function revealCalc () {
+  $(".output").show();
+}
+
 $(".add-rules").each(function() {
   var wordArray = $(this).text().split(" ");
   if (wordArray.length > 1) {
@@ -19,14 +27,6 @@ $(".add-rules").each(function() {
     $(this).html(wordArray.join(" "));
   }
 });
-
-function hideCalc () {
-  $(".output").hide();
-}
-
-function revealCalc () {
-  $(".output").show();
-}
 
 $.fn.clearForm = function() {
   return this.each(function() {
@@ -60,13 +60,14 @@ $( ".button" ).click( function(){
   var $pixelWidth = parseInt($("#widthinpixels").val());
   var $pixelHeight = parseInt($("#heightinpixels").val());
 
-function numberEvaluation () {
-  var widthEval = $pixelWidth.valueOf();
   var NotaNumberWidth = isNaN($pixelWidth);
   var NotaNumberHeight = isNaN($pixelHeight);
 
+function numberEvaluation () {
+
   if ((NotaNumberWidth || NotaNumberHeight) === true) {
     $('.output').html('<h3 class="alert">Please enter positive numeric values only.</h3>');
+
   } else {
 
     printWidth300 = ($pixelWidth * 300).toFixed(2);
@@ -86,14 +87,12 @@ function numberEvaluation () {
     $( "#min" ).next().html(printHeight150);
 
   } //end else
-
-      revealCalc();
-
 } //end numberEvaluation
 
 numberEvaluation();
+revealCalc();
 
-});
+}); //end .button click
 
 $( "form" ).submit(function( event ) {
   event.preventDefault();

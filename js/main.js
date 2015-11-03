@@ -48,6 +48,7 @@ $(".animsition").animsition();
 $('#widthinpixels').focusin(function(){
   hideCalc();
   $(this).clearForm();
+  
 });
 
 $('#heightinpixels').focusin(function(){
