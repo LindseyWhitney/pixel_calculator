@@ -98,7 +98,8 @@
   }
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: $secondary-color-periwinkle;
   background-position: top right;
 }

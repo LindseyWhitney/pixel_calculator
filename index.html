@@ -11,8 +11,8 @@
     <body class="animsition">
           <nav>
               <ul>
-                  <li class="switch-priority"><a href="print.html" class="switch animsition-link">Switch to Print Priority</a></li>
-                  <li class="github-logo"><a href="https://github.com/LindseyWhitney/pixel_calculator"><img src="images/GitHub_Logo-09.svg" alt="GitHub logo"/></a></li>
+                  <li class="switch-priority"><a href="print.html" class="switch animsition-link" tabindex=4>Switch to Print Priority</a></li>
+                  <li class="github-logo"><a href="https://github.com/LindseyWhitney/pixel_calculator" tabindex=5><img src="images/GitHub_Logo-09.svg" alt="GitHub logo"/></a></li>
               </ul>
           </nav>
           <header>
@@ -23,13 +23,13 @@
               <section class="input">
                       <form>
                           <fieldset>
-                              <input type="text" id="widthinpixels" name="width_pixels">
+                              <input type="text" id="widthinpixels" name="width_pixels" tabindex=1>
                               <label for="widthinpixels">Width in Pixels</label>
                               <div class="x"> <p>X</p> </div>
-                              <input type="text" id="heightinpixels" name="height_pixels">
+                              <input type="text" id="heightinpixels" name="height_pixels" tabindex=2>
                               <label for="heightinpixels">Height in Pixels</label>
                           </fieldset>
-                          <input type="image" class="button"/>
+                          <input type="image" class="button" tabindex=3/>
                       </form>
               </section>
               <section class="output">

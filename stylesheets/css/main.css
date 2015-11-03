@@ -907,7 +907,8 @@ fieldset {
       height: 4.1875em;
       background-color: #00ffff; } }
 
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: rgba(41, 171, 226, 0.5);
   background-position: top right; }
 

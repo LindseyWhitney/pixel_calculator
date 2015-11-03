@@ -28,16 +28,37 @@ function revealCalc () {
   $(".output").show();
 }
 
+$.fn.clearForm = function() {
+  return this.each(function() {
+    var type = this.type, tag = this.tagName.toLowerCase();
+    if (tag == 'form')
+      return $(':input',this).clearForm();
+    if (type == 'text' || type == 'password' || tag == 'textarea')
+      this.value = '';
+    else if (type == 'checkbox' || type == 'radio')
+      this.checked = false;
+    else if (tag == 'select')
+      this.selectedIndex = -1;
+  });
+};
+
 $(document).ready(hideCalc);
 $(".animsition").animsition();
+
+$('#widthinpixels').focusin(function(){
+  hideCalc();
+  $(this).clearForm();
+});
+
+$('#heightinpixels').focusin(function(){
+  hideCalc();
+  $(this).clearForm();
+});
 
 $( ".button" ).click( function(){
 
   var $pixelWidth = parseInt($("#widthinpixels").val());
   var $pixelHeight = parseInt($("#heightinpixels").val());
-
-  var regEx = /-?^\d+.?\d+$/;
-
 
 function numberEvaluation () {
   var widthEval = $pixelWidth.valueOf();
@@ -45,9 +66,7 @@ function numberEvaluation () {
   var NotaNumberHeight = isNaN($pixelHeight);
 
   if ((NotaNumberWidth || NotaNumberHeight) === true) {
-    console.log("This is not a number");
     $('.output').html('<h3 class="alert">Please enter positive numeric values only.</h3>');
-
   } else {
 
     printWidth300 = ($pixelWidth * 300).toFixed(2);
